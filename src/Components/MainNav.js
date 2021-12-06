@@ -23,12 +23,14 @@ const MainAside = () => {
 
 
 const Side = styled.aside`
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
   height: 100vh;
-  background-color : #ffdd23;
+  background-color :#C8C5C5;
+  opacity: 0.1;
   img {
     width:200px;
     height:200px;

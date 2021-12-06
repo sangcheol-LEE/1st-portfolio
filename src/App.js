@@ -1,18 +1,25 @@
 import React from 'react';
 import { createGlobalStyle} from 'styled-components'
 import styled from 'styled-components';
-import MainAside from './Components/MainAside';
+import MainNav from './Components/MainNav';
+import MainImage from './Components/MainImage';
+import MainInfo from './Components/MainInfo';
 
 const App = () => {
   return (
     <>
       <GlobalStyle/>
-      <MainContainer>
-        
-         <MainAside/>
-        
-        
-      </MainContainer>
+
+      <MainSection>
+
+         <MainNav/>
+
+         <Container>
+          <MainImage />
+          <MainInfo />
+         </Container>
+         
+      </MainSection>
     </>
 
   );
@@ -23,11 +30,16 @@ const App = () => {
 
 
 
+const Container = styled.div`
+  margin-left: 350px;
+
+`;
 
 
 
-
-const MainContainer = styled.section`
+const MainSection = styled.section`
+padding-right: 50px;
+  
 `;
 
 const GlobalStyle = createGlobalStyle`
