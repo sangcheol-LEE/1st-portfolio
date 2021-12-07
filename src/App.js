@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import MainNav from './Components/MainNav';
 import MainImage from './Components/MainImage';
 import MainInfo from './Components/MainInfo';
+import MainSkills from './Components/MainSkills';
 
 const App = () => {
   return (
@@ -15,10 +16,11 @@ const App = () => {
          <MainNav/>
 
          <Container>
-          <MainImage />
+          <MainImage/>
           <MainInfo />
+          <MainSkills />
          </Container>
-         
+
       </MainSection>
     </>
 
