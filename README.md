@@ -8,5 +8,5 @@
 
 * Functional Component
 * Hooks
-* Styled Component
-* Slick library
+* Styled-Components
+* React-Icons
