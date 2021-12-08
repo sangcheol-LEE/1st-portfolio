@@ -1,27 +1,27 @@
 import React from 'react';
 import { createGlobalStyle} from 'styled-components'
 import styled from 'styled-components';
-import MainNav from './Components/MainNav';
-import MainImage from './Components/MainImage';
 import MainInfo from './Components/MainInfo';
-import MainSkills from './Components/MainSkills';
+import MainAside from './Components/MainNav';
 
 const App = () => {
   return (
     <>
       <GlobalStyle/>
+      <Container>
+        <MainSection>
+      
+          <article className="description">
+            <MainAside />  
+            <MainInfo/>
+          </article>
 
-      <MainSection>
+          <article className="">
 
-         <MainNav/>
+          </article>  
 
-         <Container>
-          <MainImage/>
-          <MainInfo />
-          <MainSkills />
-         </Container>
-
-      </MainSection>
+        </MainSection>
+      </Container>
     </>
 
   );
@@ -33,16 +33,25 @@ const App = () => {
 
 
 const Container = styled.div`
-  margin-left: 350px;
+  width:1000px;
+  margin: 0 auto;
+  padding: 150px;
 
 `;
-
-
 
 const MainSection = styled.section`
-padding-right: 50px;
+  display: flex;
+  align-items: center;
+  .description {
+    display: flex;
+    align-items:center;
+    margin:0 auto;
+    border-bottom : 1px solid grey;
+    }
   
 `;
+
+
 
 const GlobalStyle = createGlobalStyle`
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
