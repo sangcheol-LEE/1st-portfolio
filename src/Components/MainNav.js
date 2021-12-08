@@ -9,7 +9,7 @@ const MainAside = () => {
       <img src="./Images/프사용사진.png" alt="mainImage"/>
 
       <ContactBox>
-          <GrGithub className="contact"/> 
+          <GrGithub className="contact"/>
           <FaBloggerB className="contact"/>
           <GrMailOption className="contact"/>
           <FaMobileAlt className="contact"/>
@@ -40,6 +40,7 @@ const ContactBox = styled.div`
   margin-bottom: 15px;
    .contact {
      margin: 0 10px;
+     cursor: pointer;
    }
  `;
 
