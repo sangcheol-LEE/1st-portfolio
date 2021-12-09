@@ -1,5 +1,4 @@
 import React ,{ useState,useEffect }from 'react';
-import { Link } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components';
 import MainInfo from './Components/MainInfo';
@@ -7,10 +6,8 @@ import MainAside from './Components/MainNav';
 import Skill from './Components/Skill';
 import { FaReact,FaJs,FaCss3Alt,FaHtml5 } from 'react-icons/fa'
 
-
-
-
 const App = () => {
+
   return (
     <>
       <GlobalStyle/>
@@ -43,9 +40,7 @@ const App = () => {
             <h2 className="subTitle">Team Project</h2>
 
             <ProjectBox>
-              <h3>IF LEARN</h3>
-              <span>지식 공유 플렛폼인 인프런을 모티브로 제작하는 프로젝트</span>
-              
+             
             </ProjectBox>
 
           </article>  
