@@ -5,6 +5,7 @@ import MainInfo from './Components/MainInfo';
 import MainAside from './Components/MainNav';
 import Skill from './Components/Skill';
 import { FaReact,FaJs,FaCss3Alt,FaHtml5 } from 'react-icons/fa'
+import PROJECT_INFO from './doList';
 
 const App = () => {
 
@@ -39,9 +40,15 @@ const App = () => {
             <h1 className="title">Project Experiences</h1>
             <h2 className="subTitle">Team Project</h2>
 
-            <ProjectBox>
-             
-            </ProjectBox>
+            
+             {PROJECT_INFO.map(data => {
+               return ( 
+                <ProjectBox>
+               <div>{data.name}</div>
+               </ProjectBox>
+               )
+             })}
+            
 
           </article>  
 
