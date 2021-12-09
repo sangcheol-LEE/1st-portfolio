@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{ useState,useEffect }from 'react';
 import { Link } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components';
@@ -6,6 +6,8 @@ import MainInfo from './Components/MainInfo';
 import MainAside from './Components/MainNav';
 import Skill from './Components/Skill';
 import { FaReact,FaJs,FaCss3Alt,FaHtml5 } from 'react-icons/fa'
+
+
 
 
 const App = () => {
@@ -37,8 +39,14 @@ const App = () => {
             <span className="mynter">Mynter</span><span>의 WorkSpace 부분을 담당하여 프로젝트를 진행했습니다.</span>
             </TextBox>
 
-            <h1 className="title">Project Experience</h1>
-            <h2 className="value">Team Project</h2>
+            <h1 className="title">Project Experiences</h1>
+            <h2 className="subTitle">Team Project</h2>
+
+            <ProjectBox>
+              <h3>IF LEARN</h3>
+              <span>지식 공유 플렛폼인 인프런을 모티브로 제작하는 프로젝트</span>
+              
+            </ProjectBox>
 
           </article>  
 
@@ -81,8 +89,16 @@ const MainSection = styled.section`
       margin-top: 30px;
       margin-bottom: 30px;
     }
+
+    .subTitle {
+      font-size:20px;
+      font-weight:bold;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
   }
 `;
+
 
 
 
@@ -94,7 +110,7 @@ const SkillBox = styled.div`
   `;
 
 
-const TextBox = styled.div`
+const TextBox = styled.article`
   margin-bottom: 15px;
 
   font-size:18px;
@@ -113,6 +129,9 @@ const TextBox = styled.div`
   }
 `;
 
+const ProjectBox = styled.article`
+
+`;
 
 const GlobalStyle = createGlobalStyle`
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
