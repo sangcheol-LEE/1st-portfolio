@@ -3,7 +3,7 @@ const PROJECT_INFO = [
       "id" : 1,
       "name" : "IF LEARN",
       "date" : "(2021.10.18 - 2021.10.29)",
-      "description": "지식 공유 플렛폼인 인프런 사이트를 모티브로 제작한 홈페이지",
+      "description": "지식 공유 플랫폼인 인프런 사이트를 모티브로 제작한 홈페이지",
       "how" : "인프런 공식 홈페이지를 모티브로 기획부터 개발 전부 팀원들끼리 진행하였습니다.",
       "crew" : "프런트엔드 4명, 백엔드 2명",
       "do" : [
@@ -40,5 +40,7 @@ const PROJECT_INFO = [
 
     }
   ]
+
+  
 
 export default PROJECT_INFO
