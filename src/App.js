@@ -45,6 +45,7 @@ const App = () => {
                return ( 
                 <ProjectBox>
                <div>{data.name}</div>
+               
                </ProjectBox>
                )
              })}
